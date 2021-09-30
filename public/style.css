@@ -63,6 +63,7 @@ img{
     position: absolute;
     top: 1rem;
     font-size: 3rem;
+    text-align: center;
     text-transform: uppercase;
     font-family: 'Anton', sans-serif;
     letter-spacing: .12rem;
@@ -75,6 +76,7 @@ img{
     position: absolute;
     bottom: 1rem;
     font-size: 3rem;
+    text-align: center;
     text-transform: uppercase;
     font-family: 'Anton', sans-serif;
     letter-spacing: .12rem;
@@ -90,8 +92,6 @@ img{
     margin-top: 10rem;
     
 }
-
-
 
 .meme-form {
     
@@ -143,8 +143,92 @@ img{
 
 .meme-form > input::-webkit-input-placeholder { 
     font-family: VT323, monospace;
-    font-size: 25px;
+    font-size: 15px;
     text-align: center;
 }
 
 
+@media screen and (max-width:500px){
+    header {
+        font-size: .5rem;
+        width: 30%;
+        min-width: 6rem;
+        height: 30px;
+        text-align: center;
+        margin-left: 35%;
+        
+    }
+    .meme-form > button{
+        font-size: 1.5rem;
+        width: 5rem;
+        border-radius: .5rem;
+        transform: translateY(-7rem);
+    }
+    
+    .right{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: .4rem;
+        /* background-color: black; */
+        height: 35%;
+        width: 100%;
+        
+
+        
+    }
+    .left{
+        position: absolute;
+        /* background-color: red; */
+        height: 50%;
+        width: 100%;
+        
+    }
+
+    
+
+    .meme-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+    .meme-form > input {
+        width: 50%;
+        height: 35px;
+        padding: 1rem;
+        margin: .8rem;
+        box-sizing: border-box;
+        font-size: .8rem;
+        text-align: center;
+        transform: translateY(-5rem);
+    } 
+
+    .wrapper{
+        width: 85%;
+        height: 85%;
+        
+    }
+
+    .top{
+        position: absolute;
+        top: .5rem;
+        font-size: 1.5rem;
+        text-align: center;
+        letter-spacing: .1rem;
+        color: black;
+        font-weight: 300;
+        
+    }
+    
+    .bottom{
+        position: absolute;
+        bottom: .5rem;
+        font-size: 1.5rem;
+        text-align: center;
+        letter-spacing: .1rem;
+        color: black;
+        font-weight: 300;
+        
+    }
+}
